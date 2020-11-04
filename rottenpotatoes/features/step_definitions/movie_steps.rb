@@ -18,6 +18,7 @@ end
 Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that that e1 occurs before e2.
   #  page.body is the entire content of the page as a string.
+  # http://launchware.com/articles/acceptance-testing-asserting-sort-order
   index1 = page.body.index(e1)
   index2 = page.body.index(e2)
   expect(index1).to be < index2
