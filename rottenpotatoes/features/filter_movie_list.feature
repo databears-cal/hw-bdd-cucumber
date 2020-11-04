@@ -47,7 +47,7 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
 
 Scenario: all ratings selected
   # see assignment
-  Given I check no ratings
+  Given I check the following ratings: PG, R
   When I check "ratings_PG"
   When I check "ratings_R"
   When I check "ratings_PG-13"
